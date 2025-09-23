@@ -6,7 +6,7 @@ export const routes: Routes = [
         loadComponent: () => import("./pages/tokens-format/tokens-format.component").then( c => c.TokensFormatComponent )
     },
     {
-        path:"audits-format",
+        path:"audits-filter",
         loadComponent: () => import("./pages/audits-format/audits-format.component").then( c => c.AuditsFormatComponent )
     }
 ];

@@ -1,15 +1,11 @@
-body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #f9f9f9;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10%;
+  padding:20px 5%;
   background-color: #1f1f1f;
   color: #fff;
+  margin-bottom: 20px;
   position: relative;
 }
 
