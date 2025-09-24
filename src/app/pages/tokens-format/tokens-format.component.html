@@ -5,7 +5,7 @@
   <textarea id="entrada" placeholder="Ingresa el campo de tokens aquí..." #my_original_token></textarea>
 
   <!-- Salida -->
-  <textarea id="salida" readonly placeholder="Aquí aparecerá el resultado...">{{result}}</textarea>
+  <textarea id="salida" readonly placeholder="Aquí aparecerá el resultado..." #my_result_tokens>{{result}}</textarea>
 
   <!-- Selector + botón -->
   <div class="actions">
@@ -13,6 +13,7 @@
       <option *ngFor="let action of actions_list" [value]="action.value">{{ action.label }}</option>
     </select>
     <button (click)="process_tokens(selector_list.value, my_original_token.value)">Procesar</button>
+    <button (click)="copyToClipboard(my_result_tokens.value)">Copiar resultado</button>
   </div>
 
   <div class="footer">Formateador de tokens by José Alcivar</div>
