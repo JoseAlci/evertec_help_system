@@ -16,8 +16,6 @@ export class AuditsFormatComponent {
 
     this.result = "";
 
-    let leaked_text = "Tarjeta: " + text_search + "\n";
-
     const text_line_for_line = original_text.split("\n");
 
     let list_of_matches: any[] = [];
@@ -31,9 +29,11 @@ export class AuditsFormatComponent {
       }
 
     });
+    
+    if( (list_of_matches.length > 0) && !(text_search == "") ){
 
-    if( !(list_of_matches.length == 0) ){
-
+      let leaked_text = "Tarjeta: " + text_search + "\n";
+      
       const first_appearance = list_of_matches[0]-1
       const last_appearance = list_of_matches[list_of_matches.length-1]-1
       let initial_index = 0;

@@ -33,8 +33,6 @@ export class TokensFormatComponent {
 
   }
 
-
-
   //----------------------------------------FUNCTIONS----------------------------------------
 
   parse_highlighting_spaces(original_token: string): void {
