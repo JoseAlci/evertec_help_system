@@ -24,8 +24,9 @@
 .input-group {
   display: flex;
   gap: 10px;
-  width: 60%;
+  width: 35%;
   margin: 0 auto;
+  padding: 0 0 20px 0;
 }
 
 .input-group input {
@@ -60,7 +61,7 @@
 /* Estilos para textareas */
 textarea {
   resize: vertical;
-  min-height: 500px;
+  min-height: 480px;
   padding: 15px;
   font-size: 1rem;
   border: 1px solid #ccc;
@@ -72,13 +73,13 @@ textarea:focus {
   border-color: #007BFF;
   outline: none;
 }
-
+/*
 textarea[readonly] {
   background-color: #f1f1f1;
   color: #555;
   cursor: not-allowed;
 }
-
+*/
 .container {
   display: flex;
   flex-direction: column;

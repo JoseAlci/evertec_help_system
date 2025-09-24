@@ -21,7 +21,9 @@ export class TokensFormatComponent {
 
   process_tokens(value_select: string, value_token: string) {
 
-      if (value_select === "parse_highlighting_spaces") {
+    this.result = "";
+      
+    if (value_select === "parse_highlighting_spaces") {
         this.parse_highlighting_spaces(value_token.replace(/(\r\n|\n|\r)/g, ''));
       }
 

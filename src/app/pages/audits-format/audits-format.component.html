@@ -3,20 +3,22 @@
     <h2>Filtrador de audits</h2>
   </div>
 
+  <div class="input-group">
+    <input #card_number type="text" placeholder="Ingresa la tarjeta usada..."  />
+    <button (click)="filter(audit_content.value, card_number.value)">Filtrar</button>
+    <button (click)="copyToClipboard(audit_result.value)">Copiar resultado</button>
+  </div>
+
   <!-- Contenido principal -->
   <div class="content">
     <!-- Columna Izquierda -->
     <div class="left-panel">
-      <div class="input-group">
-        <input type="text" placeholder="Ingresa la tarjeta usada..."  />
-        <button>Filtrar</button>
-      </div>
-      <textarea placeholder="Ingresa el contenido del audit..."></textarea>
+      <textarea placeholder="Ingresa el contenido del audit..." #audit_content></textarea>
     </div>
 
     <!-- Columna Derecha -->
     <div class="right-panel">
-      <textarea  readonly placeholder="El audit filtrado se mostrará aquí..."></textarea>
+      <textarea  readonly placeholder="El audit filtrado se mostrará aquí..."  #audit_result>{{result}}</textarea>
     </div>
   </div>
 
